@@ -27,3 +27,17 @@ C:\Users\HP\Source\Repos\DynamicProgramming\DynamicProgramming\obj\Debug\net6.0\
 C:\Users\HP\Source\Repos\DynamicProgramming\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.pdb
 C:\Users\HP\Source\Repos\DynamicProgramming\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.genruntimeconfig.cache
 C:\Users\HP\Source\Repos\DynamicProgramming\DynamicProgramming\obj\Debug\net6.0\ref\DynamicProgramming.dll
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\bin\Debug\net6.0\DynamicProgramming.exe
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\bin\Debug\net6.0\DynamicProgramming.deps.json
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\bin\Debug\net6.0\DynamicProgramming.runtimeconfig.json
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\bin\Debug\net6.0\DynamicProgramming.dll
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\bin\Debug\net6.0\DynamicProgramming.pdb
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.AssemblyInfoInputs.cache
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.AssemblyInfo.cs
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.csproj.CoreCompileInputs.cache
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.dll
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\refint\DynamicProgramming.dll
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.pdb
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\DynamicProgramming.genruntimeconfig.cache
+C:\Users\HP\Source\Repos\AlgoritmeTeAvancuara\DynamicProgramming\obj\Debug\net6.0\ref\DynamicProgramming.dll

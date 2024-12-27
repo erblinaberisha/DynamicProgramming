@@ -2,25 +2,34 @@
 
 class TwinString
 {
-   
+
     public static int MinOperationsGreedy(string S)
     {
         int n = S.Length;
-        int operations = 0;
+        int minOperations = int.MaxValue;
 
-        char evenChar = S[0];
-        char oddChar = S[1];
-
-        for (int i = 0; i < n; i += 2)
+        for (char evenChar = 'A'; evenChar <= 'Z'; evenChar++)
         {
-            operations += Math.Abs(S[i] - evenChar);
+            for (char oddChar = 'A'; oddChar <= 'Z'; oddChar++)
+            {
+                int operations = 0;
+
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = i + 1; j < n; j++)
+                    {
+                        if (i % 2 == 0 && j % 2 == 0)
+                            operations += Math.Abs(S[i] - evenChar) + Math.Abs(S[j] - evenChar);
+                        else if (i % 2 == 1 && j % 1 == 1)
+                            operations += Math.Abs(S[i] - oddChar) + Math.Abs(S[j] - oddChar);
+                    }
+                }
+
+                minOperations = Math.Min(minOperations, operations);
+            }
         }
 
-        for (int i = 1; i < n; i += 2)
-        {
-            operations += Math.Abs(S[i] - oddChar);
-        }
-        return operations;
+        return minOperations;
     }
 
     public static int MinOperationsDP(string S)
@@ -42,6 +51,7 @@ class TwinString
             {
                 curr[c] = int.MaxValue / 2;
                 int costToChange = Math.Abs(S[i] - ('A' + c));
+
                 for (int prevC = 0; prevC < ALPHABET_COUNT; prevC++)
                 {
                     if (Math.Abs(c - prevC) <= 1)
@@ -50,6 +60,7 @@ class TwinString
                     }
                 }
             }
+
             Array.Copy(curr, prev, ALPHABET_COUNT);
         }
 
