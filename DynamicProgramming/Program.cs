@@ -65,9 +65,28 @@ class TwinString
 
     static void Main(string[] args)
     {
-        string input1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        string input2 = "ESPRIT";
-        string input3 = "NOZAPHODJUSTVERYVERYIMPROBABLE";
+        Console.WriteLine("Do you want to input your own strings? (yes/no):");
+        string userChoice = Console.ReadLine().ToLower();
+
+        string input1, input2, input3;
+
+        if (userChoice == "yes")
+        {
+            Console.WriteLine("Enter the first input string:");
+            input1 = Console.ReadLine();
+
+            Console.WriteLine("Enter the second input string:");
+            input2 = Console.ReadLine();
+
+            Console.WriteLine("Enter the third input string:");
+            input3 = Console.ReadLine();
+        }
+        else
+        {
+            input1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            input2 = "ESPRIT";
+            input3 = "NOZAPHODJUSTVERYVERYIMPROBABLE";
+        }
 
         Console.WriteLine("Greedy Approach:");
         Console.WriteLine($"Input: {input1}, Operations: {MinOperationsGreedy(input1)}");
