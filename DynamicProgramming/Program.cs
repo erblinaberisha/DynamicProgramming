@@ -2,21 +2,24 @@
 
 class TwinString
 {
+   
     public static int MinOperationsGreedy(string S)
     {
         int n = S.Length;
         int operations = 0;
-        char[] arr = S.ToCharArray();
 
-        for (int i = 1; i < n; i++)
+        char evenChar = S[0];
+        char oddChar = S[1];
+
+        for (int i = 0; i < n; i += 2)
         {
-            if (arr[i] != arr[i - 1])
-            {
-                operations += Math.Abs(arr[i] - arr[i - 1]);
-                arr[i] = arr[i - 1];
-            }
+            operations += Math.Abs(S[i] - evenChar);
         }
 
+        for (int i = 1; i < n; i += 2)
+        {
+            operations += Math.Abs(S[i] - oddChar);
+        }
         return operations;
     }
 
