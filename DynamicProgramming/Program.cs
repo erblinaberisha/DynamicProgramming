@@ -28,44 +28,40 @@ class TwinString
         int n = S.Length;
         const int ALPHABET_COUNT = 26;
 
-        int[,] dp = new int[n, ALPHABET_COUNT];
-
-        for (int i = 0; i < n; i++)
-        {
-            for (int j = 0; j < ALPHABET_COUNT; j++)
-            {
-                dp[i, j] = int.MaxValue / 2;
-            }
-        }
+        int[] prev = new int[ALPHABET_COUNT];
+        int[] curr = new int[ALPHABET_COUNT];
 
         for (int j = 0; j < ALPHABET_COUNT; j++)
         {
-            dp[0, j] = Math.Abs(S[0] - ('A' + j));
+            prev[j] = Math.Abs(S[0] - ('A' + j));
         }
 
         for (int i = 1; i < n; i++)
         {
             for (int c = 0; c < ALPHABET_COUNT; c++)
             {
+                curr[c] = int.MaxValue / 2;
                 int costToChange = Math.Abs(S[i] - ('A' + c));
                 for (int prevC = 0; prevC < ALPHABET_COUNT; prevC++)
                 {
                     if (Math.Abs(c - prevC) <= 1)
                     {
-                        dp[i, c] = Math.Min(dp[i, c], dp[i - 1, prevC] + costToChange);
+                        curr[c] = Math.Min(curr[c], prev[prevC] + costToChange);
                     }
                 }
             }
+            Array.Copy(curr, prev, ALPHABET_COUNT);
         }
 
         int minOperations = int.MaxValue;
         for (int j = 0; j < ALPHABET_COUNT; j++)
         {
-            minOperations = Math.Min(minOperations, dp[n - 1, j]);
+            minOperations = Math.Min(minOperations, prev[j]);
         }
 
         return minOperations;
     }
+
 
     static void Main(string[] args)
     {
