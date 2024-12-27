@@ -1,6 +1,7 @@
 # DynamicProgramming
 
-Problem: A letter in a string has a twin if it has the same letter immediately to its left or immediately to its
+##Problem:
+A letter in a string has a twin if it has the same letter immediately to its left or immediately to its
 right (or both). For example, in the string "AARDVARK" each of the first two 'A' has a twin (but the third 'A'
 does not) and in the string "FLUSSSAND" each of the three 'S' has a twin. Elly has a String S containing at
 least two characters. The girl can alter her string as many times as she likes. In each operation she chooses
@@ -10,7 +11,9 @@ the previous letter in the alphabet (e.g., 'B' to 'A', 'M' to 'L', and 'Z' to 'Y
 decremented and the letter 'Z' cannot be incremented. Multiple operations may be applied to the same
 index. Thus, S can be transformed into any other string of the same length. Elly wants to alter her S into a
 string in which each letter has a twin. Please find and return the minimal number of operations needed.
-Examples:
+
+
+##Examples:
 Input: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 Output: 13
 Each letter on an even position (counting from zero) can be incremented, achieving
@@ -21,7 +24,9 @@ Input: "ESPRIT"
 Output: 25
 Input: “NOZAPHODJUSTVERYVERYIMPROBABLE”
 Output: 93
-Requirements:
+
+
+##Requirements:
 1. Implement two different approaches to solve the problem.
 2. Each approach should result in different time/space complexity combinations. Therefore, the
 two approaches can have different time complexity, space complexity or both.
